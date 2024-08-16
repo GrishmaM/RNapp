@@ -8,6 +8,9 @@ buildscript {
         kotlinVersion = "1.9.22"
     }
     repositories {
+        flatDir {
+            dirs("libs")  // Directory where local .jar files are stored
+        }
         google()
         mavenCentral()
     }
